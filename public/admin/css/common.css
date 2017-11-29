@@ -5,3 +5,7 @@ bg-body{
 .mt-150{
     margin-top:150px;
 }
+
+.panel h4{
+    text-align: center;
+}
