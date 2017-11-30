@@ -119,3 +119,28 @@ html,body {
     text-align: center;
     vertical-align:middle;
 }
+
+.dropdown button {
+    background-color:#666,
+}
+.fileupload_box {
+    width: 82px;
+    height: 34px;
+    position: relative;
+}
+
+.fileupload_box input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+
+.fileupload_box:hover  button{
+    background-color: #e6e6e6;
+    color:#333;
+    border-color:#adadad;
+
+}
