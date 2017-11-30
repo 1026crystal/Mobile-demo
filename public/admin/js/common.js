@@ -8,7 +8,7 @@ $(function(){
         //开启进度条
         NProgress.start();
     });
-    
+
     $(document).ajaxStop(function(){
         //关闭进度条
         setTimeout(function(){
@@ -67,6 +67,7 @@ $(function(){
             });
         });
     });
+    
 // ============实现退出   方法2================
     // $(".btn_logout").on('click',function(){
     //     $.ajax({
