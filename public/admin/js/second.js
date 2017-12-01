@@ -46,7 +46,6 @@ $(function () {
       },
       success: function (data) {
         $(".dropdown-menu").html(template("myTpl2", data));
-
       }
     });
   });
@@ -59,7 +58,8 @@ $(function () {
     $(".dropdown-text").text(text);
 
     //获取到id值，设置给categoryId
-    $("[name='categoryId']").val($(this).data['id']);
+    $("[name='categoryId']").val($(this).data("id"));
+    // console.log($(this).data("id"));
 
     //让categoryId校验成功 
     $form.data("bootstrapValidator").updateStatus("categoryId", "VALID");
@@ -80,8 +80,7 @@ $(function () {
       //把上传的图片的地址赋值给 brandLogo
       $("[name='brandLogo']").val(data.result.picAddr);
 
-      $form.data("bootstrapValidator").updateStatus("brandLogo","VALID");
-
+      $form.data("bootstrapValidator").updateStatus("brandLogo", "VALID");
     }
   });
 
@@ -128,8 +127,8 @@ $(function () {
     e.preventDefault();
     $.ajax({
       type:'post',
-      url:'/category/addSecondCategory',
-      date:$form.serialize(),
+      url:"/category/addSecondCategory",
+      data: $form.serialize(),
       success:function(data){
         // console.log(data);
         if(data.success){
@@ -144,13 +143,11 @@ $(function () {
           $form[0].reset();
 
           $("[type='hidden']").val('');
-          $("dropdown-text").text("请选择一级分类");
+          $(".dropdown-text").text("请选择一级分类");
           $(".img_box img").attr("src","images/none.png");
 
         }
       }
     });
   });
-
-
 });
