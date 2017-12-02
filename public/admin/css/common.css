@@ -32,10 +32,11 @@ html,body {
     width: 180px;
     height: 100%;
     background-color:#666;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     transition: all 1s;
+    z-index:999;
 }
 .lt_aside.now {
     left:-180px;
@@ -99,11 +100,11 @@ html,body {
     line-height: 50px;
     padding:0 20px;
     margin-bottom: 20px;
+    transition: all 1s;
 }
 .lt_main .topBar span {
     font-size:16px;
     color:#fff;
-
 }
 
 .chart_left,
