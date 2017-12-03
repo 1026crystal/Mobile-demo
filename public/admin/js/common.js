@@ -42,6 +42,7 @@ $(function(){
         console.log(this);
         $(".lt_aside").toggleClass("now");
         $(".lt_main").toggleClass("now");
+        $(".topBar").toggleClass("now");
 
     });
 
