@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.lt_history {
+  padding: 10px;
+}
+
+.lt_history .title {
+  font-size: 12px;
+  color: #666;
+}
+
+.lt_history .title span {
+  height: 21px;
+  line-height: 21px;
+}
+
+.lt_history .content {
+  border: 1px dashed red;
+}
+
+.lt_history .content li {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px dashed red;
+  padding-left: 10px;
+}
+
+.lt_history .content li:last-child {
+  border-bottom: none;
+
+}
+
+.lt_history .content a {
+  font-size: 12px;
+}
+
+.lt_history .content span {
+  height: 30px;
+  line-height: 30px;
+}
+
+.tips {
+  color: #666;
+  font-size: 12px;
+}
